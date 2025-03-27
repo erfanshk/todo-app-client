@@ -1,7 +1,7 @@
 import { errorToast, successToast } from "@store/slices/toast/toast.slice";
 import store from "@store/store";
 import axios, { AxiosInstance } from "axios";
-const apiUrl = import.meta.env.VITE_API_URL;
+const apiUrl = import.meta.env.VITE_API_URL ?? "https://erfanshk-todo-api-service.liara.run";
 
 export interface ApiResponse<T = any> {
   data: T;
